@@ -14,11 +14,11 @@ int main()
     }
     if(sum==a)
     {
-        printf("palindrome");
+        printf("yes");
     }
     else
     {
-        printf("not");
+        printf("no");
     }
 
     return 0;
