@@ -10,16 +10,16 @@ int main()
     if((ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u') || (ch=='A'||ch=='E'||ch=='I'||ch=='O'||ch=='U'))  
     {
         
-        printf("vowels");  
+        printf("Vowels");  
     }
     else if(ch>='a' && ch<='z'||ch>='A' && ch<='Z')
     {
-        printf("consonants");
+        printf("Consonants");
         
     }
     else
     {
-        printf("Invalid");
+        printf("invalid");
     }
 
     return 0;
