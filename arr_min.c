@@ -11,11 +11,11 @@ int main()
     for(i=0;i<size;i++)
     {
     if(n[i]<n[i+1])
-    {
+      {
          temp=n[i];
          n[i]=n[i+1];
          n[i+1]=temp;
-    }
+      }
     }
    printf("%d",temp);
    return 0;
