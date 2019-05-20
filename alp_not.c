@@ -7,12 +7,12 @@ int main()
    
     if(ch>='a' && ch<='z'||ch>='A' && ch<='Z')
     {
-        printf("Alphabets");
+        printf("Alphabet");
         
     }
     else
     {
-        printf("Not");
+        printf("No");
     }
 
     return 0;
