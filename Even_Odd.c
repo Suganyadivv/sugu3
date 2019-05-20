@@ -4,11 +4,11 @@ int main()
 {
     int no;
     scanf("%d",&no);
-   if(no<0)
+    if(no<0)
      {
-        printf("Invalid");
+        printf("invalid");
     }
-   else if(no%2==0)
+    else if(no%2==0)
     {
     
         printf("Even");
