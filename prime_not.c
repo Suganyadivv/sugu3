@@ -19,6 +19,5 @@ int main()
     {
         printf("no");     //not prime_no
     }
-
     return 0;
 }
