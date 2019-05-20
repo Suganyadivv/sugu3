@@ -7,11 +7,11 @@ int main()
     for(int i=a;i<b;i++)
     {
         if(i>a && i%2!=0)
-        {
-            
+        { 
             printf("%d",i);
+            printf(" ");
         }
-        printf(" ");
+      
     }
     return 0;
 }
