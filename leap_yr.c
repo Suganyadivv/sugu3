@@ -6,11 +6,11 @@ int main()
     scanf("%d",&a);
     if(((a%4==0)||(a%400==0))&&(a%100!=0))
     {
-        printf("Leap yr");
+        printf("yes");
     }
     else
     {
-        printf("Not Leap yr");
+        printf("no");
     }
     return 0;
 }
