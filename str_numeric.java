@@ -11,12 +11,12 @@ public class Main
 	   { 
 	   if(a[i]>='0' && a[i]<='9')
 	   {
-	       	System.out.println("yes");
+	       	System.out.println("Yes");
 	       	break;
 	   }
 	   else
 	   {
-	      	System.out.println("no");
+	      	System.out.println("No");
 	      	break;
 	   }
 	   }
