@@ -6,7 +6,7 @@ public class Main
 		Scanner sc=new Scanner(System.in);
 		s1=sc.nextLine();
 		String s2=s1.replaceAll(" ","");
-	    int k=s2.length();
+	        int k=s2.length();
 		System.out.println(k);
 	}
 }
