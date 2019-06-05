@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+<head><title>Project</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script type="text/javascript"> 
+function saveme()
+{
+localStorage.setItem("n1",document.F1.n1.value);
+localStorage.setItem("c1",document.F1.c1.value);
+localStorage.setItem("p1",document.F1.p1.value);
+localStorage.setItem("e1",document.F1.e1.value);
+}
+function showme()
+{
+var a=localStorage.getItem("n1");
+var b=localStorage.getItem("c1");
+var c=localStorage.getItem("p1");
+var d=localStorage.getItem("e1");
+alert("Username:"+a+"  "+"City:"+b+"  "+"Phone_no:"+c+"  "+"Email:"+d+"  ");
+saveme();
+}
+function post()
+{
+alert("Thank you for your Comments...!");
+}
+function p()
+{
+alert("Payment process completed...!Soon your purchased item to be deliver");
+}
+
+</script>
+</head>
+
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+<div class="container-fluid">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" >
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a href="#" class="navbar-brand">Get in Touch</a>
+</div>
+<div id="myNavbar" class="collapse navbar-collapse">
+<ul class="nav navbar-nav navbar-right">
+<li><a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+<li><a href="index.html"><span class="glyphicon glyphicon-lock"></span> Shop</a></li>
+<li><a href="index.html"><span class="glyphicon glyphicon-user"></span> Contact-us</a></li>
+<li><a href="index.html"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+</ul>
+</div>
+</div>
+</div>
+</nav>
+
+<div class="container-fluid" style="margin-top:60px">
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+<ul class="carousel-indicators">
+<li data-target="#demo" data-slide-to="0" class="active"></li>
+<li data-target="#demo" data-slide-to="1"></li>
+<li data-target="#demo" data-slide-to="2"></li>
+</ul>
+  
+  <!-- The slideshow -->
+<div class="carousel-inner" role="listbox">
+<div class="item active">
+<img src="https://b2bskillstraining.com/wp-content/uploads/2016/10/getintouch_slider_b2bskillstraining.jpg" width="1800" class="img img-responsive">
+</div>
+<div class="item">
+  <!--<img src="https://ae01.alicdn.com/kf/HTB1AP1sa21G3KVjSZFk5jaK4XXa1.gif" width="1500">-->
+<img src="https://assets.myntassets.com/w_980,c_limit,fl_progressive,dpr_2.0/assets/images/retaillabs/2019/6/1/d764d1c2-0d91-489f-9eb3-bf3389a45c7d1559400192909-Slide-1.jpg" width="1800"  class="img img-responsive">
+</div>
+<div class="item">
+<img src="https://assets.myntassets.com/w_980,c_limit,fl_progressive,dpr_2.0/assets/images/banners/2019/6/4/e177feba-30dd-49a3-90e4-b965d23416ac1559648354150-Maybelline_Desk_Banner.jpg" width="1800"  class="img img-responsive">
+</div>
+</div>
+  
+ <!-- Left and right controls--> 
+<a class="carousel-control-prev" href="#demo" data-slide="prev">
+<span class="carousel-control-prev-icon"></span>
+</a>
+<a class="carousel-control-next" href="#demo" data-slide="next">
+<span class="carousel-control-next-icon"></span>
+</a>
+</div>
+</div>
+
+<br>
+<div class="row">
+<div class="col-lg-12">
+<div class="col-lg-8">
+<img src="https://www.forever21.com/images/f21/us/en/web/20190602/0603_SummerCommodity_m_desktop.gif?1" height="500"  class="img img-responsive">
+</div>
+<div class="col-lg-4">
+<img src="http://www.urdesignmag.com/wordpress/wp-content/uploads/2018/09/apple-iphone-xr-2.gif" height="500"  class="img img-responsive">
+</div>
+</div>
+</div>
+<br><br>
+
+<div class="jumbotron">
+<div class="container">
+<div class="row">
+<h3 class="text-right text-primary"><b>Home</b></h3>
+<center><img src="http://www.forever21.com/images/f21/us/en/web/20190213/President-50OFF-header.gif?1" width="1000"  class="img img-responsive"><center><br>
+<div class="col-lg-12">
+
+<div class="col-lg-6">
+<div class="alert alert-info alert-dismissible">
+<button type="button" class="close" aria-label="close" data-dismiss="alert"><span>&times;</span></button>
+<h4 class="text-center"><strong>Get in Touch</strong></h4>
+<p>Now open in Seattle!Get in touch is a new kind of store featuring the world’s most advanced shopping technology...</p>
+</div>
+<!--<img src="https://www.edesignmart.com/images/tool_banner.png" width="500"  class="img img-responsive">-->
+<img src="https://media.glamour.com/photos/5cf16ad269281e2ee1537d22/master/w_400%2Cc_limit/0601_shopping_ticker.gif"  class="img img-responsive">
+</div>
+
+<div class="col-lg-6">
+<h3 class="text-info text-center">Sign-in</h3>
+<form name="F1" method="post" class="form-horizontal">
+<div class="form-group">
+<label class="control-label col-sm-2">Username:</label>
+<div class="col-sm-10">
+<input type="text" name="n1" class="form-control" placeholder="Enter your name" required>
+</div>
+</div>
+<div class="form-group">
+<label class="control-label col-sm-2">City:</label>
+<div class="col-sm-10">
+<input type="text" name="c1"class="form-control" placeholder="City name"required>
+</div>
+</div>
+<div class="form-group">
+<label class="control-label col-sm-2">Phone_no:</label>
+<div class="col-sm-10">
+<input type="text" name="p1" class="form-control" placeholder="Enter your Mobile Number"required>
+</div>
+</div>
+<div class="form-group">
+<label class="control-label col-sm-2">E-mail:</label>
+<div class="col-sm-10">
+<input type="email" name="e1" class="form-control" placeholder="abc@..."required>
+</div>
+</div>
+<button onclick="saveme()" class="btn btn-success col-sm-offset-5 col-sm-3">SaveMe</button>
+</form>
+<br><br><br><br>
+<img src="https://media.hicart.com/images/slider/r_megaweek_shop-now.gif"  class="img img-responsive">
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<script type="text/javascript">
+var cost;
+function fun()
+{
+ cost=0;
+if(document.myform1.b1.checked)
+{
+cost=cost+200;
+}
+if(document.myform1.c1.checked)
+{
+cost=cost+550;
+}
+if(document.myform1.ww1.checked)
+{
+cost=cost+900;
+}
+if(document.myform1.d1.checked)
+{
+cost=cost+70;
+}
+if(document.myform1.m1.checked)
+{
+cost=cost+1500;
+}
+if(document.myform1.w1.checked)
+{
+cost=cost+2000;
+}
+document.myform1.total.value=cost;
+}
+function cart() 
+{
+var a=document.myform1.total.value;
+alert("Your purchased amount is: "+a);
+fun();
+}
+</script>
+
+
+<div class="jumbotron">
+<div class="container">
+<div class="row">
+<h3 class="text-primary"><b>Shopping Zone</b></h3><br>
+<div class="col-lg-12">
+
+<form name="myform1" method="post">
+<div class="col-md-2">
+<div class=" panel panel-danger">
+<div class="panel-heading">
+<h5 class="text-center"><b>Books</b></h5>
+</div>
+<div class="panel-body">
+<img src="https://www.printi.com/blog/wp-content/uploads/2018/10/ugur-akdemir-664735-unsplash-800x500.jpg" width="800px" height="500px" class="img img-responsive"><br> 
+&nbsp;&nbsp;<input type="checkbox" name="b1" onclick="fun()" style="text-align:right"> ₹200
+<button class="btn btn-danger"><span class="glyphicon glyphicon-shopping-cart"> Buynow</span></button>
+</div>
+</div>
+</div>
+
+<div class="col-lg-2">
+<div class=" panel panel-info">
+<div class="panel-heading">
+<h5 class="text-center"><b>Cosmetics</b></h5>
+</div>
+<div class="panel-body">
+<img src="https://glamourfame.com/uploads/beauty/2018/12/03/best-makeup-brands-world-1543828496.jpg" width="1728px" height="4551px" class="img img-responsive"><br>
+&nbsp;&nbsp;<input type="checkbox" name="c1" onclick="fun()" style="text-align:right"> ₹550
+ <button class="btn btn-info"><span class="glyphicon glyphicon-shopping-cart"> Buynow</span></button>
+</div>
+</div>
+</div>
+
+<div class="col-md-2">
+<div class=" panel panel-success">
+<div class="panel-heading">
+<h5 class="text-center"><b>Watch</b></h5>
+</div>
+<div class="panel-body">
+<img src="http://www.watchesonabudget.com/wp-content/uploads/2016/01/a-pilot-style-watch.jpg" width="200px" height="150px" class="img img-responsive"><br>
+&nbsp;&nbsp;<input type="checkbox" name="ww1" onclick="fun()" style="text-align:right"> ₹900
+<button class="btn btn-success"><span class="glyphicon glyphicon-shopping-cart"> Buynow</span></button>
+</div>
+</div>
+</div>
+
+<div class="col-md-2">
+<div class=" panel panel-info">
+<div class="panel-heading">
+<h5 class="text-center"><b>DairyMilk</b></h5>
+</div>
+<div class="panel-body">
+<img src="https://www.insity.com/content/images/thumbs/000/0002821_cadbury-dairy-milk-silk-60-gm.jpeg" width="200px" height="150px" class="img img-responsive"><br>
+&nbsp;&nbsp;<input type="checkbox" name="d1" onclick="fun()"> ₹70
+<button class="btn btn-info"><span class="glyphicon glyphicon-shopping-cart"> Buynow</span></button>
+</div>
+</div>
+</div>
+
+<div class="col-md-2">
+<div class=" panel panel-primary">
+<div class="panel-heading">
+<h5 class="text-center"><b>Men Collection</b></h5>
+</div>
+<div class="panel-body">
+<img src="https://images.menswearhouse.com/is/image/TMW/20190102_18-1503325_MWT_PROM_LPREP_MOB?qlt=80&scl=1" width="900px" height="700px" class="img img-responsive"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="m1" onclick="fun()" style="text-align:right"> ₹1500
+<button class="btn btn-primary"><span class="glyphicon glyphicon-shopping-cart"> Buynow</span></button>
+</div>
+</div>
+</div>
+
+<div class="col-md-2">
+<div class=" panel panel-warning">
+<div class="panel-heading">
+<h5 class="text-center"><b>Women Collection</b></h5>
+</div>
+<div class="panel-body">
+<img src="https://i.pinimg.com/236x/32/64/c4/3264c4c6e6f227eb02d8cf225578e3c6--girl-back-tween-fashion-for-girls-for-school.jpg" width="500px" height="150px" class="img img-responsive"><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="w1" onclick="fun()" style="text-align:right"> ₹2000
+<button class="btn btn-warning"><span class="glyphicon glyphicon-shopping-cart"> Buynow</span></button>
+</div>
+</div>
+</div>
+
+<center><input type="text" name="total" value="0"/><br><br>
+<button onclick="cart()" class="btn btn-success">Add to Cart<span class="glyphicon glyphicon-shopping-cart"></span></button>
+<input type="reset" value="Clear" class="btn btn-danger"/></center>
+</form>
+<br><br>
+<h4 class="text-center text-danger"><b><i>New Arrivals</i></b></h4>
+<center><img src="http://weddingstreet.in/temp/wedzone-shopping2.gif"  class="img img-responsive"></center>
+</div>
+</div>
+</div>
+</div>
+
+<div class="jumbotron">
+<div class="container">
+<div class="row">
+<div class="col-lg-12">
+<div class="col-lg-6">
+<h2 class="text-primary text-center">Contact-us</h2>
+<form name="myform">
+<div class="form-group">
+<label>Name:</label>
+<input type="text"  class="form-control" placeholder="Enter your name" required>
+</div>
+<div class="form-group">
+<label>Phone_no:</label>
+<input type="text"  class="form-control" placeholder="Enter your Mobile Number" required>
+</div>
+<div class="form-group">
+<label>E-mail:</label>
+<input type="email" class="form-control" placeholder="abc@..." required>
+</div>
+<div class="form-group">
+<label>Query:</label>
+<textarea cols="40" rows="5" class="form-control" required></textarea>
+</div>
+<button onclick="post()" type="button" class="btn btn-danger col-sm-offset-5 col-sm-3">Post Comment</button>
+</form>
+</div>
+
+<div class="col-lg-6">
+<div class=" panel panel-primary">
+<div class="panel-heading">
+<h4 class>By Phone</h4>
+</div>
+<div class="panel-body text-center">
+<b>Call to speak with member of our sales or support teams:  987654321</b>
+</div>
+</div>
+<img src="https://www.yayuanzi.com/cdn/assets/yyzinstitute/img/wrapper-img.gif" width="550"  class="img img-responsive">
+<!--<img src="https://www.edesignmart.com/images/light-effect.png">-->
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="container">
+<div class="row well">
+<h2>&nbsp;<b>Cart</b><span class="glyphicon glyphicon-shopping-cart"></span></h2>
+<div class="col-lg-12">
+
+<div class="col-lg-6">
+<center><img src="https://loading.io/spinners/shopping/lg.shopping-cart-loader-icon.gif" class="img img-responsive"></center><br><br>
+<label><h4><b>User_Details:</b></h4></label>
+&nbsp;<button onclick="showme()" type="button" class="btn btn-info">ShowMe</button><hr>
+<label><h4><b>Shopped_Prices:</b></h4></label>
+<button onclick="cart()" class="btn btn-success"> Add to Cart<span class="glyphicon glyphicon-shopping-cart"></span></button><br><hr>
+<h4 ><b><i>Payment Process</i></b></h4>
+<a onclick="p()"><i class="fa fa-credit-card" style="font-size:24px"></i></a>&nbsp;
+<a onclick="p()"><i class="fa fa-cc-visa" style="font-size:24px"></i></a>&nbsp;
+<a onclick="p()"><i class="fa fa-cc-paypal" style="font-size:24px"></i></a>&nbsp;
+<a onclick="p()"><i class="fa fa-inr" style="font-size:24px"></i></a>&nbsp;
+</div>
+
+<div class="col-lg-6">
+<h3 class="text-right text-primary"><b><i>Keep in touch</i></b><h3>
+<img src="https://www.lyfemarketing.com/wp-content/uploads/2018/08/fitness-gif.gif" height="100" class="img img-responsive">
+</div>
+</div>
+</div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</body>
+</html> 
