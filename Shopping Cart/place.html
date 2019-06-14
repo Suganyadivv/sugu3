@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head><title>Place order</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="js/shop.js" type="text/javascript"></script>
+<style href="css/style.css" type="text/css"></style>
+</head>
+<body>
+<div class="container" style="padding:60px 100px">
+<div class="row well">      
+<div class="col-lg-12">
+
+<div class="col-lg-4">
+<br><br>
+<label><h4><b>User_Details:</b></h4></label>
+&nbsp;<button onclick="showme()" type="button" class="btn btn-info">ShowMe</button><hr>
+<img src="img/img17.gif" width="50%" class="img img-responsive"> 
+</div>
+
+
+<div class="col-lg-8 text-justify">
+      <h3><b>Payment  Process</b></h3>
+            <label>Accepted Cards</label>
+            <div class="icon-container">
+              <i class="fa fa-cc-visa" style="font-size:24px;color:navy;"></i>
+              <i class="fa fa-cc-amex" style="font-size:24px;color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="font-size:24px;color:red;"></i>
+              <i class="fa fa-cc-discover" style="font-size:24px;color:orange;"></i>
+            </div>
+            <label for="cname">Name on Card</label>
+            <input type="text" id="cname" name="cardname" placeholder="sugu"><br>
+            <label for="ccnum">Credit card number</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444"><br>
+            <label for="expmonth">Exp Month</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="September"><br>
+            <label for="expyear">Exp Year</label>
+            <input type="text" id="expyear" name="expyear" placeholder="2021"><br>
+            <label for="cvv">CVV</label>
+            <input type="text" id="cvv" name="cvv" placeholder="352"><br>
+            <label>
+            <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+            </label>
+            <input type="submit" value="Continue to checkout" class="btn btn-success" onclick="p()">
+</div>
+</div>
+</div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</body>
+</html> 
